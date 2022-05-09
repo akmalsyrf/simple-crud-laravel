@@ -43,7 +43,7 @@
         <td>{{$row->created_at->diffForHumans()}}</td>
         <td>
           <button class="btn btn-danger">Delete</button>
-          <button class="btn btn-warning">Edit</button>
+          <a href="/tampilkanpegawai/{{$row->id}}" class="btn btn-info">Edit</a>
         </td>
       </tr>
       @endforeach
