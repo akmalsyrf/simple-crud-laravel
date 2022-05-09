@@ -10,4 +10,6 @@ class Employee extends Model
     use HasFactory;
 
     protected $guarded = []; //apa saja bisa dimasukkan
+
+    protected $dates = ['created_at'];
 }

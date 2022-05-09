@@ -22,6 +22,6 @@ class EmployeeController extends Controller
     {
         // dd($request->all());
         Employee::create($request->all());
-        return redirect()->route('pegawai');
+        return redirect()->route('pegawai')->with('success', 'Data berhasil ditambahkan');
     }
 }
