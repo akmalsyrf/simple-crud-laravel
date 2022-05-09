@@ -39,4 +39,12 @@ class EmployeeController extends Controller
 
         return redirect()->route('pegawai')->with('success', 'Data berhasil diupdate!');
     }
+
+    public function deletepegawai($id)
+    {
+        $data = Employee::find($id);
+        $data->delete();
+
+        return redirect()->route('pegawai')->with('success', 'Data berhasil dihapus!');
+    }
 }

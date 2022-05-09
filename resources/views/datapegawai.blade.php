@@ -42,7 +42,7 @@
         <td>0{{$row->no_telp}}</td>
         <td>{{$row->created_at->diffForHumans()}}</td>
         <td>
-          <button class="btn btn-danger">Delete</button>
+          <a href="/deletepegawai/{{$row->id}}" class="btn btn-danger">Delete</a>
           <a href="/tampilkanpegawai/{{$row->id}}" class="btn btn-info">Edit</a>
         </td>
       </tr>

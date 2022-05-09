@@ -20,3 +20,4 @@ Route::get('/tambahpegawai', [EmployeeController::class, 'tambahpegawai'])->name
 Route::post('/insertpegawai', [EmployeeController::class, 'insertpegawai'])->name('insertpegawai');
 Route::get('/tampilkanpegawai/{id}', [EmployeeController::class, 'tampilkanpegawai'])->name('tampilkanpegawai');
 Route::post('/updatepegawai/{id}', [EmployeeController::class, 'updatepegawai'])->name('updatepegawai');
+Route::get('/deletepegawai/{id}', [EmployeeController::class, 'deletepegawai'])->name('deletepegawai');
