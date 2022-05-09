@@ -20,7 +20,8 @@ class EmployeeController extends Controller
 
     public function insertpegawai(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         Employee::create($request->all());
+        return redirect()->route('pegawai');
     }
 }

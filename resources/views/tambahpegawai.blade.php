@@ -22,11 +22,11 @@
             @csrf
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+              <input type="text" name="nama" class="form-control" id="nama" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="gender" class="form-label">Jenis kelamin</label>
-              <select class="form-select" id="gender" aria-label="Default select example">
+              <select class="form-select" name="jenis_kelamin" id="gender" aria-label="Default select example">
                 <option selected disabled>Pilih jenis kelamin</option>
                 <option value="Laki-laki">Laki-laki</option>
                 <option value="Perempuan">Perempuan</option>
@@ -34,7 +34,7 @@
             </div>
             <div class="mb-3">
               <label for="telp" class="form-label">No Telepon</label>
-              <input type="number" class="form-control" id="telp" aria-describedby="emailHelp">
+              <input type="number" name="no_telp" class="form-control" id="telp" aria-describedby="emailHelp">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
