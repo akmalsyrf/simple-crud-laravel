@@ -1,3 +1,6 @@
+<!-- default value foto -->
+<!-- aksi edit foto -->
+
 <!doctype html>
 <html lang="en">
 
@@ -27,6 +30,7 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nama</th>
+        <th scope="col">Foto</th>
         <th scope="col">Jenis kelamin</th>
         <th scope="col">No Telepon</th>
         <th scope="col">Dibuat</th>
@@ -34,10 +38,16 @@
       </tr>
     </thead>
     <tbody>
+      @php
+      $no = 1;
+      @endphp
       @foreach($data as $row)
       <tr>
-        <th scope="row">{{$row->id}}</th>
+        <th scope="row">{{$no++}}</th>
         <td>{{$row->nama}}</td>
+        <td>
+          <img src="{{asset('fotopegawai/'.$row->foto)}}" style="width:100px;" alt="">
+        </td>
         <td>{{$row->jenis_kelamin}}</td>
         <td>0{{$row->no_telp}}</td>
         <td>{{$row->created_at->diffForHumans()}}</td>

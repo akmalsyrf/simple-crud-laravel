@@ -36,6 +36,10 @@
               <label for="telp" class="form-label">No Telepon</label>
               <input type="number" name="no_telp" class="form-control" id="telp" aria-describedby="emailHelp">
             </div>
+            <div class="mb-3">
+              <label for="foto" class="form-label">Masukkan foto</label>
+              <input type="file" name="foto" class="form-control" id="foto" aria-describedby="emailHelp">
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
